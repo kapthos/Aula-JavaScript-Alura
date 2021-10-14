@@ -6,16 +6,10 @@ const estaAcompanhado = true;
 
 console.log(listaDestinos);
 
-if (idadeComprador >= 18) {
+if (idadeComprador >= 18 || estaAcompanhado == true) {
     console.log("Compra feita com sucesso.");
     listaDestinos.splice(1, 1);
     console.log(listaDestinos);
 } else {
-    if (estaAcompanhado) {
-        console.log("Compra feita com sucesso com acompanhante.");
-        listaDestinos.splice(1, 1);
-        console.log(listaDestinos);
-    } else {
         console.log("Cliente menor de idade.");
-    }
 }
